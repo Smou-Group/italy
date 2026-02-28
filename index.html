@@ -35,6 +35,7 @@
       inset:0;
       background:linear-gradient(180deg,rgba(0,0,0,.65),rgba(0,0,0,.65));
     }
+
     .container{
       position:relative;
       max-width:1000px;
@@ -42,6 +43,35 @@
       margin:auto;
       width:100%;
     }
+
+    /* ===== Back Button ===== */
+    .back-btn{
+      position:absolute;
+      top:25px;
+      right:25px;
+      width:48px;
+      height:48px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      font-size:22px;
+      color:#fff;
+      background:rgba(255,255,255,0.12);
+      border:1px solid rgba(255,255,255,0.25);
+      backdrop-filter:blur(10px);
+      -webkit-backdrop-filter:blur(10px);
+      box-shadow:0 8px 25px rgba(0,0,0,.3);
+      transition:all .25s ease;
+      z-index:10;
+    }
+    .back-btn:hover{
+      background:rgba(255,255,255,0.25);
+      transform:translateY(-4px);
+      box-shadow:0 15px 35px rgba(0,0,0,.4);
+    }
+
     .logo{
       width:72px;height:72px;
       margin:0 auto 18px;
@@ -93,6 +123,12 @@
       h1{font-size:24px}
       p{font-size:15px}
       .btn{font-size:15px}
+      .back-btn{
+        top:15px;
+        right:15px;
+        width:42px;
+        height:42px;
+      }
     }
   </style>
 </head>
@@ -100,6 +136,11 @@
 <body>
   <section class="hero">
     <div class="container">
+
+      <!-- Back Arrow -->
+      <a href="https://portal.smougroup.com/" class="back-btn" title="العودة">
+        ←
+      </a>
 
       <div class="logo">
         <img src="logo.png" alt="SMOU GROUP">
